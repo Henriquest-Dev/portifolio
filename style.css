@@ -1,158 +1,91 @@
 *{
-    margin: 0;
-    padding: 0;
-   box-sizing: 0;
+
+
+.cor{ background-color: rgba(94, 4, 146, 0.452); }
+
+
+.titulo{ color: rgb(154,47,255); text-align:center; }
+.sub{ color:white; text-align:center; }
+
+
+.perfil{
+width: 60%; max-width: 250px;
+border-radius: 50%;
+box-shadow: 0 0 20px purple;
 }
 
 
+.texto-intro h4{
+background: blueviolet;
+padding: 10px;
+color:white;
+text-align:center;
+}
+.texto-intro p{ color:white; text-align:center; }
 
 
-nav{
-    font-family: Arial;
+.skills-section{ text-align:center; margin-top:50px; }
+
+
+.skills-box{
+max-width: 500px;
+margin: auto;
+padding: 30px;
+background-color: rgba(94,4,146,0.3);
+border-radius: 20px;
+box-shadow: 0 15px 30px blueviolet;
 }
 
-.cor{
-    background-color: rgba(94, 4, 146, 0.452);
+
+.skills-box ul{ list-style:none; }
+.skills-box li{
+margin: 20px 0;
+color:white;
+font-weight: bold;
+}
+.percent{ float:right; }
+
+
+.linha{
+background:#ccc;
+display:block;
+height:20px;
+border-radius:20px;
+overflow:hidden;
+}
+.linha span{
+display:block;
+height:100%;
+background: linear-gradient(to right, rgba(94, 4, 146, 0.452),blueviolet);
 }
 
-.sk{
-    text-align: center;
-    color: rgb(154, 47, 255) ;
-    font-family: verdana;
+
+.html{ width:80%; }
+.css{ width:40%; }
+.bootstrap{ width:60%; }
+
+
+.projeto{
+padding:40px;
+background:blueviolet;
+text-align:center;
+border-radius:15px;
 }
-
-
-
-h4{
-    text-align: center;
-    color: white;
-    background-color: blueviolet;
-    font-family: verdana;
-}
-
-.tex{
-    text-align: center;
-    font-family: verdana;
-    color: white;
-    padding: 2rem;
-}
-
-h5{
-    text-align: center;
-    color: white;
-    font-family: verdana;
-}
-
-p{
-    text-align: center;
-    color: white;
-    font-family: verdana;
-   cursor: pointer;
-}
+.projeto h5{ color:white; }
+.projeto a{ color:white; text-decoration:none; }
 
 
 footer{
-    background-color: rgba(94, 4, 146, 0.452);
-    padding: 70px;
-    margin-top: 70px;
-
+background-color: rgba(94, 4, 146, 0.452);
+color:white;
+padding:40px;
+text-align:center;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-}
 
-.ses{
-    color: white;
-    font-family: verdana;
-}
-.skills{
-    width: 500px;
-    padding: 40px;
-    border-radius: 20px;
-    background-color: rgba(94, 4, 146, 0.452);
-    margin-left: 28rem;
-    box-shadow: 0 15px 30px blueviolet;
-
-}
- .skills ul{
-    list-style: none;
-
- }
-
- .skills ul li{
-    margin: 20px 0;
-    color: white;
-    font-family: verdana;
- }
-
- .skills .linha{
-    background-color: #ccc;
-    display: block;
-    height: 20px;
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    transition: .4s ease-in-out;
- }
-
- .linha > span{
-        height: 20px ;
-        background: linear-gradient(to right, rgba(94, 4, 146, 0.452),blueviolet);
-        position: absolute;
-      
- }
-
-.html{
-    width: 80%;
-    animation: html 4s ;
-}
-
-.css{
-    width: 40%;
-    animation: css 4s ;
-}
-
-.bootstrap{
-    width: 60%;
-    animation: bootstrap 4s ;
-}
-
-@keyframes html {
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 80%;
-    }
-}
-
-@keyframes css {
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 40%;
-    }
-}
-
-@keyframes bootstrap {
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 60%;
-    }
-}
-
-.nave ul {
-    list-style: none;
-
-}
-
-.nave ul li {
-    color: white;
-    font-family: verdana;
-
+/* RESPONSIVIDADE */
+@media (max-width:768px){
+.perfil{ width: 80%; }
+.skills-box{ width:90%; }
+.texto-intro{ text-align:center; margin-top:20px; }
 }
